@@ -94,7 +94,7 @@ export const currentSessionAtom = atom((get) => {
 })
 
 export const currentSessionNameAtom = selectAtom(currentSessionAtom, (s) => s.name)
-export const currsentSessionPicUrlAtom = selectAtom(currentSessionAtom, (s) => s.picUrl)
+export const currentSessionPicUrlAtom = selectAtom(currentSessionAtom, (s) => s.picUrl)
 
 
 export const currentMessageListAtom = selectAtom(currentSessionAtom, (s) => {
