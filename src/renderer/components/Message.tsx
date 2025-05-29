@@ -20,7 +20,7 @@ import {
     openSettingDialogAtom,
     enableMarkdownRenderingAtom,
 } from '../stores/atoms'
-import { currsentSessionPicUrlAtom, showTokenUsedAtom } from '../stores/atoms'
+import { currentSessionPicUrlAtom, showTokenUsedAtom } from '../stores/atoms'
 import * as scrollActions from '../stores/scrollActions'
 import Markdown from '@/components/Markdown'
 import '../static/Block.css'
@@ -51,7 +51,7 @@ export default function Message(props: Props) {
     const showWordCount = useAtomValue(showWordCountAtom)
     const showTokenUsed = useAtomValue(showTokenUsedAtom)
     const enableMarkdownRendering = useAtomValue(enableMarkdownRenderingAtom)
-    const currentSessionPicUrl = useAtomValue(currsentSessionPicUrlAtom)
+    const currentSessionPicUrl = useAtomValue(currentSessionPicUrlAtom)
     const setOpenSettingWindow = useSetAtom(openSettingDialogAtom)
 
     const { msg, className, collapseThreshold, hiddenButtonGroup, small } = props
